@@ -1,0 +1,70 @@
+More interview questions link :
+
+Longest common subsequence : http://www.geeksforgeeks.org/printing-longest-common-subsequence/
+Design patterns : http://www.geeksforgeeks.org/software-design-patterns/
+Implementing queue using stacks : http://www.geeksforgeeks.org/?p=5009
+counting words in a string : http://www.geeksforgeeks.org/count-words-in-a-given-string/
+String interview questions : http://www.geeksforgeeks.org/string-data-structure/
+Lab126 questions : https://www.careercup.com/page?pid=lab126-interview-questions
+
+Queue using stacks : https://www.programcreek.com/2014/07/leetcode-implement-queue-using-stacks-java/
+Stack using 1 queue : http://www.geeksforgeeks.org/implement-a-stack-using-single-queue/
+Triplets with zero sum : http://www.geeksforgeeks.org/find-triplets-array-whose-sum-equal-zero/
+Serialize n Deserialize BT : https://gist.github.com/bittib/5620951
+Print level order traversal line by line : http://www.geeksforgeeks.org/print-level-order-traversal-line-line/
+HashMap internally : https://netjs.blogspot.com/2015/05/how-hashmap-internally-works-in-java.html
+Memoization : https://www.interviewcake.com/concept/java/memoization	
+Scrabble game (Amazon ques) : https://gist.github.com/zonski/5847795
+Distance b/w 2 nodes BT : http://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/
+
+
+Interview cheat sheets :
+
+https://orrsella.com/2016/05/14/preparing-for-a-facebook-google-software-engineer-interview/
+Java code examples : https://github.com/orrsella/soft-eng-interview-prep/blob/master/topics/java-examples.md
+https://gist.github.com/TSiege/cbb0507082bb18ff7e4b
+https://github.com/MindorksOpenSource/android-interview-questions
+https://github.com/derekargueta/Android-Interview-Questions#android-design-and-xml
+Leetcode questions : https://leetcode.com/problemset/top-interview-questions/?difficulty=Medium
+Union and intersections of 2 linked lists : http://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/
+Amazon questions : https://practice.geeksforgeeks.org/company/Amazon/Medium/ , http://www.techiedelight.com/Tags/amazon/page/2/
+Merging overlapping intervals : http://www.techiedelight.com/merging-overlapping-intervals/
+Reverse words : http://www.geeksforgeeks.org/reverse-words-given-string-java/
+https://www.javatpoint.com/java-regex
+https://stackoverflow.com/questions/4067809/how-can-i-find-whitespace-space-in-a-string
+
+
+https://javabeat.net/lazy-initialisation-singleton-and-double-check-locking/
+https://stackoverflow.com/questions/2056/what-are-mvp-and-mvc-and-what-is-the-difference
+Dependency injection  :https://tech.just-eat.com/2015/10/26/dependency-injection-on-android/
+MVC MVP MVVM : https://academy.realm.io/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/
+Android interview questions : https://github.com/MindorksOpenSource/android-interview-questions
+https://mindorks.com/blog/detecting-and-fixing-memory-leaks-in-android
+https://blog.mindorks.com/android-development-best-practices-83c94b027fd3
+https://blog.mindorks.com/how-to-reduce-apk-size-in-android-2f3713d2d662
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
