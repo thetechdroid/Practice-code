@@ -1,0 +1,228 @@
+Android Interview questions
+
+=========================================================================================================
+
+General Developer Questions
+
+How familiar you are with the Android and Google Guidelines?
+Describe Test-Driven Development. [info]
+Explain unit tests versus functional tests.
+Describe Scrum and Kanban.
+What project management tools have you used?
+How do you ensure that you are working efficiently?
+Do you have basic familiarity with working on the command line i.e. Gradle, Ant, or the Java Compiler?
+
+=========================================================================================================
+Core Java
+
+Object-Oriented Programming
+
+What are the main 3 Object Oriented Programing (OOP) concepts?
+Explain object serialization and how to implement it in Java.
+Explain anonymous classes. [info]
+Describe the differences between abstract classes and interfaces. [info]
+Explain what a Singleton class is and how to create one in Java [info]
+Why should the equals() and hashCode() methods often be overridden together? [info]
+How do you properly override the equals() method? For example, what considerations should be taken when checking for equality? [info]
+Difference between final, finally and finalize?
+In Java, does the finally block gets executed if we insert a return statement inside the try block of a try-catch-finally?
+Explain method overloading & overriding.
+
+Data Structures
+
+What are the use cases and differences of arrays and ArrayLists?
+What are the use cases and differences of a HashSet and a TreeSet?
+
+Build Tools
+
+Have you used any Ant, Maven, Gradle features for your project?
+
+=========================================================================================================
+Programming Paradigms
+
+Explain event-driven programming in Java [info]
+What is Java's Garbage Collection and how does it help you as a developer?
+How can you typecast in Java? [info]
+Explain Java's try-catch-finally paradigm [info]
+
+=========================================================================================================
+Core Android
+
+How does the Android notification system work?
+How can two distinct Android apps interact? (several answers)
+Describe Activities. [info]
+What are the four states of the Activity Lifecycle? [active/running, paused, stopped, destroyed]
+What are the seven callback methods of an Activity used to perform operations when the Activity transitions between states? [onCreate(), onStart(), onResume(), onPause(), onStop(), onRestart(), onDestroy()]
+What is the difference between a fragment and an activity? Explain the relationship between the two.
+What is the difference between Serializable and Parcelable? Which is the best approach in Android?
+What are "launch modes"?
+What are Intents? [info]
+What is an Implicit Intent? [info]
+What is an Explicit Intent? [info]
+Describe three common use cases for using an Intent.
+What is a Service? [info]
+What is a ContentProvider and what is it typically used for? [info]
+What is a Fragment? [info]
+What is ADB?
+What is ANR?
+What is AndroidManifest.xml used for? Give examples of what kind of data you would add to it. [info]
+Describe how broadcasts and intents work to be able to pass messages around your app.[info]
+What is the Dalvik Virtual Machine?
+What are different ways to store data in your Android app? [info]
+Android appplication components [info]
+What is the relationship between the life cycle of an AsyncTask and an Activity? What problems can this result in? How can these problems be avoided?
+What is the difference between Service and IntentService? How is each used?
+What is a Sticky Intent?
+What is AIDL? [info]
+What is dependency injection?
+What are the different protection levels in permission? [info]
+
+=========================================================================================================
+Android Design and XML
+
+Explain the differences and similarities of Relative Layout and Linear Layout.
+Explain the differences and similarities of List Views and Grid Views.
+Describe how to implement XML namespaces.
+Explain how to present different styles/drawables for a button depending on the state of the button (pressed, selected, etc.) using XML (no Java) [info]
+for layout_width and layout_height, what's the difference between match_parent and wrap_content?
+How do you implement Google's new Material Design in an Android application? [info]
+Difference between View.GONE and View.INVISIBLE?
+
+Android Networking
+
+Have you use an HTTP Library, which, why, did you like it?
+Describe how REST APIs work.
+What are some typical methods of HTTP request/responses? [GET, POST, PUT, PATCH, DELETE, UPDATE]
+
+Databases
+
+Why does Android use SQLite?
+What libraries have you used for interacting with databases and why did you choose them?
+What are contract classes? [info]
+How do you use the BaseColumns interface to describe your data schema? [info]
+
+=======================================================================================================
+"What's the biggest thread-related task you've experienced? Tell me, how did you implement that?
+How would you manage multiple similar tasks? 
+How do you make a thread that wakes up phone every time? How do you make threads that fall asleep as phone goes to sleep?
+
+Ask about using NDK.
+Ask about experience in making custom controls for a specific need.
+Ask about a nifty features you've seen in other apps and "how would you implement that".
+Ask about similar libraries for a specific need - which ones, let's say, for http requests the user has used (maybe REST-like with POJO<->JSON transformation?), which limitations did they reach in each.
+Ask about the hardest tasks they've done and the solution (and what they learned from that case)
+Give your recent, complex problem you know solution (and have made it) and ask, how the person would solve it.
+Basic question about activity/fragment life cycle + bugs the person has found in them (Hello, Samsung!!!) wouldn't harm. Ask about workarounds required. Ask about the buggiest Android versions they can name and what things do NOT work as expected in some Android versions. 
+
+=========================================================================================================
+
+1.What is ANR (application not responding)? What is the reason for this problem and what is the solution for that problem?
+2.How to update UI from other threads? Note : Other thread means other than main thread.
+3.How binder is different from serialization?
+4.What is the difference between thread and handler thread, in android?
+5.What is the difference between service and a thread?
+6.How to create a service with multiple threads in it?
+7.What is the difference between startservice and bindservice?
+
+=========================================================================================================
+
+If the UI begins to behave sluggishly or crash while making network calls this is likely due to ______.
+What is used to detect when a user clicks or taps on a button?
+How do you request permissions for your application?
+How do you display Action Bar back button on all versions of Android?
+Which service is used to perform IPC, when bind application to a service?
+What permission is required for your application to use the device's vibrate hardware?
+How to enable overlay mode On API level 11 or higher, to create a custom theme for your activity.
+Android application main components are?
+
+=========================================================================================================
+
+When does ANR occur?
+What data types are supported by AIDL?
+What is AndroidManifest.xml?
+How can ANR be prevented?
+What are the different states wherein a process is based?
+Enumerate the three key loops when monitoring an activity
+When is the onStop() method invoked?
+Explain adb
+Mention 5 Native Android Actions?
+ways data stored in Android?
+Explain layers in Android Architecture?
+Describe the APK format.
+
+=========================================================================================================
+How do you avoid memory leaks in an android application?
+What's the difference between the application context and an activity context? When would you use either?
+how to create memory leaks
+Memory management and garbage collection. 
+Threading strategies for Android
+Discuss architecture and patterns. What does a Reactive architecture offers that an Event-Driven one do not? 
+
+=========================================================================================================
+
+
+10 Questions that are mostly asked for 2-5 years’ experience are;
+
+Which is better between two different versions of android?
+
+What will you do to develop a secure Android Application?
+
+1. What is assert? Where will you use it?
+
+2. How do you find memory leaks in Android application? (LeakCanary can be used or by chking root cause on Android Monitor)
+
+3. Explain about any exception which you have handled in your application? (ClassNotFoundException, NullPointerException)
+
+4. How will you design a ListView which downloads lot of images and displays in it without getting your app getting hanged? What’s the best possible way to do
+(2 ways to do it, 1. Using ListViewActivity class which contains both image and text in the layout and using AsyncTask to fetch the images in the background
+and displaying it. 2. Using Thread and Handler to fetch the images and feed to the UI thread where we have ListViewActivity to populate and show, better way 
+would be to use AsyncTask using lazy loader, so that application doesnt hang and images are loaded as we scroll down.)
+
+5. Activity Life Cycle (done)
+
+6. What is a ContentProvider and what is it typically used for? (done)
+
+7. What are sensors and what is its use?
+
+8.  What is DDMS? Describe some Capabilities.
+
+9. Describe three common use cases for using an Intent. (start an activity, service or to create a broadcast)
+
+10. What is ANR? How to avoid ANR in your application. (App not responding, dont perform heavy operations on UI thread and create other worker threads, show progress dialog etc...)
+
+=========================================================================================================
+
+
+
+=========================================================================================================
+
+
+
+=========================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
