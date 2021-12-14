@@ -1,0 +1,17 @@
+Class LLLengthImpl{
+
+public int lengthOfLL (Node root) {
+
+if (root == null) return -1;
+
+Node curr = root;
+int length = 0;
+
+while(curr != null){
+length++;
+curr = curr.next;
+}
+
+return length;
+}
+}
