@@ -1,0 +1,23 @@
+class Node{ // linked list structure
+
+// assuming the fields are public/open. If they are private we need getters and setters 
+
+int data; 
+Node node;
+
+public Node(int d, Node n){
+data = d;
+node = n;
+}
+}
+
+// This structure can be used inside the same file 
+
+
+class LLImpl {
+
+// operations on LL where every node is Node's object
+
+
+}
+
