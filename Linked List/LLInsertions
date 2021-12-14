@@ -1,0 +1,49 @@
+// Assuming the sturcture is already created for LL impl
+
+class LLImpl{
+
+// LL initially would look like      1 -> 2 -> 3 -> 4 -> 6
+
+
+// insertion can be at the beginning, middle and end, it will always have a Node parameter or just int value (and we can create a Node ourselves, both possible scenarios)
+// For simplification, I am using Nodes to insert
+
+public void insertionAtBeginning(Node n){ // a node n with data as 0 for reference
+if (root == null) return;
+n.next = root;
+root = n;
+}
+
+
+
+public void insertionInMiddle(Node n, Node mid){ // a node n with data as 0 for reference, insert after Node mid (3 for e.g.)
+Node curr = root;
+
+while(curr.next != null){
+
+if(curr == mid){
+n.next = curr.next;
+curr.next = n;
+break;
+}
+
+curr = curr.next;
+}
+
+}
+
+
+public void insertionAtTheEnd(Node n){ // a node n with data as 0 for reference
+Node curr = root;
+
+while(curr.next != null){
+curr = curr.next;
+}
+
+curr.next = n;
+n.next = null;
+}
+
+
+}
+
