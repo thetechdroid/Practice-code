@@ -1,0 +1,50 @@
+class LLImpl{
+
+public boolean hasLoopMethod1(Node root){
+
+// Method 1 : Find total count of nodes and then go to the middle node and print it's value
+int length = 0;
+
+if(root == null) return -1;
+Node curr = root;
+
+while(curr != null){
+length++;
+curr = curr.next;
+}
+
+int middle = length/2;
+int count = 0;
+
+while (count < middle){
+count++;
+curr = curr.next;
+}
+
+print(curr.data) // good for odd length, first middle for even length
+print(curr.next.data) // second middle for even length
+
+}
+}
+
+
+public boolean hasLoopMethod2(Node root){
+
+// Method 1 : take 2 pointers, slow and fast, when fast reaches the end , slow will point to the middle element
+
+Node curr = root;
+Node slow = root;
+Node fast = root;
+
+while(slow != null && fast != null &&fast.next != null){
+
+slow = slow.next;
+fast = fast.next.next;
+
+}
+
+print(slow.data) // good for odd length, first middle for even length
+print(slow.next.data) // second middle for even length
+
+
+}
