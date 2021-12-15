@@ -1,0 +1,33 @@
+
+// Basic binary tree creation
+
+Class TreeNode{
+
+int data;
+TreeNode left;
+TreeNode right;
+
+public TreeNode(int d){
+data=d;
+left=right= null;
+}
+
+public TreeNode(int d. TreeNode l, TreeNode r){
+data = d;
+left = l;
+right = r;
+}
+}
+
+
+class BTImpl{
+
+// All of these are a form of DFS
+// inorder : root in the middle, recursion is the go to way for this. For iteration, use stacks for all three of them
+// preorder : root at the front
+// postorder : root at the end
+
+// Level order traversal or BFS is done using Queue and/or recursion based on level
+
+
+}
