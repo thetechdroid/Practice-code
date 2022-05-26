@@ -13,7 +13,7 @@ class ReformatDate {
         List<String> months = Arrays.asList(monthsInArray);
         
    
-        String dayInInt = day.replaceAll("\\D", "");
+        String dayInInt = day.replaceAll("\\D", ""); // \\d removes all digits, \\D removes all non-digits
                     
         String monthString = String.format("%02d", months.indexOf(month)+1);
         String dayString = String.format("%02d", Integer.parseInt(dayInInt));
