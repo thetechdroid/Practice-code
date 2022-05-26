@@ -1,1 +1,55 @@
 
+package numbers;
+
+public class CheckIfNumberEndsWithAnotherNumber {
+
+    // TC : O(n) in both cases, SC : O(1)
+    public static void main(String[] args) {
+
+        int num1 = 12345;
+        int num2 = 23;
+        int num3 = 45;
+
+        print("==== Before =====");
+        print(num1 + " ends with " + num2 + " " + isNumberPostfix(num1, num2));
+        print(num1 + " ends with " + num3 + " " + isNumberPostfix(num1, num3));
+        print("==== After =====");
+    }
+
+    // trying to check if num2 is a prefix of num1
+    private static boolean isNumberPostfix(int num1, int num2) {
+        if (num1 <= 0 || num2 <= 0 || num2 > num1) {
+            return false;
+        }
+
+        String number1 = String.valueOf(num1);
+        String number2 = String.valueOf(num2);
+
+
+        // Solution 1 : Using string function
+        boolean result1 = number1.endsWith(number2);
+
+
+        /* Solution 2 : Using for loop == way more complicated
+         coz lengths are not going to be the same
+         If you have tp=o make them same lengths, you need to insert those many zeroes in the beginning
+         */
+
+
+        return result1;
+
+    }
+
+
+    private static void print(int[] array) {
+        for (int i : array) {
+            System.out.print(i + " ");
+        }
+        System.out.println(" ");
+    }
+
+    private static void print(String str) {
+        System.out.println(str + " ");
+    }
+
+}
