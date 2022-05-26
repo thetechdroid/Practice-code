@@ -1,0 +1,26 @@
+class ReformatDate {
+    public String reformatDate(String date) {
+        
+        StringBuilder builder = new StringBuilder();
+        String[] values = date.split("\\s");
+        
+        String day = values[0];
+        String month = values[1];
+        String year = values[2];
+
+        
+        String[] monthsInArray = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        List<String> months = Arrays.asList(monthsInArray);
+        
+   
+        String dayInInt = day.replaceAll("\\D", "");
+                    
+        String monthString = String.format("%02d", months.indexOf(month)+1);
+        String dayString = String.format("%02d", Integer.parseInt(dayInInt));
+
+        builder.append(year).append("-").append(monthString).append("-").append(dayString);
+        return builder.toString();
+    }
+    
+    
+}
