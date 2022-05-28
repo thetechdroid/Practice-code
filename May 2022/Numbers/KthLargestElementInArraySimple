@@ -1,0 +1,22 @@
+class KthLargestElementInArraySimple {
+    public int findKthLargest(int[] nums, int k) {
+        
+        if(nums == null || nums.length == 0) return -1;
+        
+        if(k > nums.length) return -1;
+        
+        if(k == 0) return -1;
+        
+        
+        //basic approach
+        int result = 0;
+        
+        Arrays.sort(nums);
+        
+        return nums[nums.length - k];
+        
+        
+        
+        
+    }
+}
