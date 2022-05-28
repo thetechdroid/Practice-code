@@ -1,0 +1,25 @@
+class MissingNumber {
+    public int missingNumber(int[] nums) {
+        
+        
+        int length = nums.length; // range would be from 1 to length
+        int result = 0;
+      
+        int missingNumber = length;
+        
+        for(int i=0; i < length;i++){
+            
+            missingNumber = missingNumber ^ i ^ nums[i];
+            
+        }
+        
+        
+        
+        return missingNumber;
+        
+        
+        
+        
+        
+    }
+}
