@@ -1,0 +1,31 @@
+class CheckIfRowAndColumnContainsAllNumbers {
+    public boolean checkValid(int[][] matrix) {
+        
+        if(matrix.length == 0 || matrix[0].length == 0){
+            return false;
+        }
+        
+        int length = matrix.length;
+        
+        for(int i=0;i < length; ++i){ // row length
+        Set<Integer> rows = new HashSet<>();
+        Set<Integer> columns = new HashSet<>();
+            
+            for(int j=0; j< length; ++j){
+                rows.add(matrix[i][j]);
+                columns.add(matrix[j][i]);
+            }
+            
+            if(Math.min(rows.size(),columns.size()) < length){
+                return false;
+            }
+            
+            
+        }
+        
+        
+        
+        return true;
+        
+    }
+}
