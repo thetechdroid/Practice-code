@@ -1,0 +1,34 @@
+class RemoveDuplicatesFromSortedArray {
+    public int removeDuplicates(int[] nums) {
+        if(nums.length == 0) return 0;
+        int result = 0;
+        
+        int i=0; // slow pointer
+        
+        for(int j=0;j < nums.length;j++){ // j is the fast pointer
+            
+            if(nums[j] != nums[i]){
+                i++;
+                nums[i]= nums[j];
+            }
+        }
+        
+        result = i+1;
+        
+        // not required but good practice to clean up rest of the array
+        
+         for(int j=i+1;j < nums.length;j++){ // j is the fast pointer
+           nums[j] = 0;
+           }
+        
+        
+        
+        return result;
+        
+        
+        
+        
+        
+        
+    }
+}
