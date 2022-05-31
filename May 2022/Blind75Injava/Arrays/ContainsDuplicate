@@ -1,0 +1,26 @@
+class ContainsDuplicate {
+    public boolean containsDuplicate(int[] nums) {
+        boolean result = false;
+        
+        // brute force. time limit exceeded, TC : O(n^2), SC : O(1)
+        for(int i=0;i < nums.length;i++){
+            for(int j=0; j < nums.length;j++){
+                if(i != j && nums[i] == nums[j]){
+                    return true;
+                }
+            }
+        }
+        
+         // Optimized wrt time, but takses up space, TC : O(n), SC : O(n)
+        Set<Integer> set = new HashSet<>();
+        
+        for(int num : nums){
+            if(!set.add(num)){
+                return true;
+            }else{
+                set.add(num);
+            }
+        }
+       return result; 
+    }
+}
