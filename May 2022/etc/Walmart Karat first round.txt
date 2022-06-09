@@ -1,0 +1,114 @@
+Walmart interview questions:
+
+Design Snake and Ladder, discussion on Facebook feed.
+Scenario Based questions
+Java basics round - core java
+Easy question on lists and from the resume
+Delivery optimization algorithm
+Particular use of some keywords in java .. that help with encapsulation and immutability.
+Detailed discussion on dependency injection.
+Java multithreaded synchronisation and deadlock
+Open ended problem in which I could use any data structure and implement the whole solution with the data structure too.
+
+Round 1 (machine coding round) :
+
+Typically you are asked to write a working code for an online e-commerce application like Amazon , Flipkart etc
+Apis :
+- List of items based on location and availability
+- Add item and create cart
+- Filter Items based on Price , Ratings and Delivery Preference
+
+You are required to construct the low level design and provide working code in 90 mins
+
+Few Key Points -
+- Use OOPs constructs extensible wherever needed
+- Follow Proper Coding Standards
+- Startup with DAO classes and Database Design and then come upto controller layer
+- Good to have Junits (if time permits)
+
+Round 2 (DS ALGO) :
+
+- Given a root to a binary tree and two nodes , find out whether two nodes are cousins or not. (Nodes at same level but from different parent)
+- Given an array of start time and end times of meetings , find the maximum no of meetings that can be arranged in a room (Condition for meetings - start time of next meeting > end time of current meeting)
+
+Round 3 (DS/Algo , Design) :
+
+- Given a list of airline tickets represented by pairs of departure and arrival airports [from, to], reconstruct the itinerary in order. All of the tickets belong to a man who departs from DEL. 
+Thus, the itinerary must begin with DEL.
+-Detailed discussion on the current architecture of the project which I was working on.
+Major highlighting parts were , Different Load Balancing paradigms you are aware of , what are the loopholes of the current architecture and if given a chance what alteration will you bring.
+
+
+Possible first round questions:
+
+
+Non repeating longest substring
+Valid Sudoku
+Coin change problem pseudo code L
+Insertion sort variation hacker rank test
+Easy question on lists 
+Coding round - mainly questions around string manipulation
+Implement LRU cache and cache based questions in general
+Activity selection problem for trains
+How does hash map work internally. how will you implement your own hash map. L
+How many pairs present in a list having given sum. L
+
+given a list of numbers, find if any number in the list is prefix of another number
+Find kth largest element in a stream of numbers
+Recursive method to reverse a string
+Given a root to a binary tree and two nodes , find out whether two nodes are cousins or not. (Nodes at same level but from different parent)
+Given an array of start time and end times of meetings , find the maximum no of meetings that can be arranged in a room (Condition for meetings - start time of next meeting > end time of current meeting)
+Find if Linked List has loop, if so, find length of the loop. == done
+
+
+1st round karat interview guide:
+
+================= I wrote this = start =================
+
+1 hour with 1 engineer from Karat
+45 mins for DS Algo questions
+10 mins open ended questions (Behavioural + project based questions) = You will have an option to choose from 5 6 categories
+Recruiter said it could be 3 questions, but when I was registering for karat interview, I was told 1 question only for 45 mins (could be OOP or OOD based)
+They are looking for a simple code which is functional and then go for optimization
+If it doesn't go well in your opinion, you can reschedule in 24 hours
+Could be a mix of feature imp (design something like a Twitter) or plain DS/Algo
+
+================= I wrote this = end=================
+
+
+Karat interview questions:
+
+1. Short introduction
+2. Asked me to select few topic on which the interviewer asked me questions based on CS fundamentals. Topics includes but not limited to, OOD, OS, Software Testing etc.
+3. Asked me LC medium question. Mentioned that he is looking for complete executable solution instead of optimal one. 
+I was able to code it quickly so asked another medium question. Explained my approach but not able to code it completely as only 10 minutes were left.
+4. Lastly, asked me if I have any questions for him.
+
+Karat interview tips:
+
+https://juejin.cn/post/6844904085913600008
+https://www.jianshu.com/p/fdbcba5fe5bc
+
+
+Questions asked (from Blind):
+
+ find if word exists in the array and variation of word search
+ An easy LC and a medium LC
+ 1. Given a two dimensional matrix of binary numbers find the number of continuous rectangles that are entirely based on zeros.
+2. How to define classes to represent rubik's cube and implement some basic functionality like twist and is complete?
+ 
+ They always ask LC : 1 simple,  1 medium and 1 hard
+
+
+Prep for Karat behavioural and Walmart HM round from here:
+
+https://prepfully.com/interview-questions/walmart
+
+Best leetcode solutions website:
+
+https://walkccc.me/LeetCode/problems/1160/
+https://github.com/surajr/CodingInterview/tree/master/java
+https://cheonhyangzhang.gitbooks.io/leetcode-solutions/content/8_string_to_integer_atoi__easy.html
+
+
+                     
