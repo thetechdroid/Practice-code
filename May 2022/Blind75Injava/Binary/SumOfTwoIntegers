@@ -1,0 +1,33 @@
+class SumOfTwoIntegers {
+    public int getSum(int a, int b) {
+        
+        int n1 = Math.abs(a);
+        int n2 = Math.abs(b);
+        
+        if(n2 > n1) return getSum(b,a);
+        
+        int sign = (a > 0)? 1 : -1 ;
+        
+        if(a*b >= 0){
+            while(n2 != 0){
+                int ans = n1 ^ n2;
+                int carry = (n1 & n2) << 1;
+                n1 = ans;
+                n2 = carry;
+            }
+        }else{
+          while(n2 != 0){
+                int ans = n1 ^ n2;
+                int carry = ((~n1) & n2) << 1;
+                n1 = ans;
+                n2 = carry;
+            }
+        }
+        
+        
+        return n1 * sign;
+        
+        
+        
+    }
+}
