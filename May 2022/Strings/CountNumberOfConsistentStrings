@@ -1,0 +1,28 @@
+class CountNumberOfConsistentStrings {
+    public int countConsistentStrings(String allowed, String[] words) {
+        
+        
+        // over TC : O(N+W+L) ~ O(N), SC : O(N) for storing a set
+
+        int result = 0;
+        Set<Character> set = new HashSet<>();
+        
+        for(char c : allowed.toCharArray()){ // O(L) where L is length of allowed
+            set.add(c);
+        }
+        
+        
+        for(String word : words){ // O(N)
+           boolean match = true;
+            
+            for(char c : word.toCharArray()){// O(M) M is length of the word
+            if(!set.contains(c)){
+                match = false;
+                break;
+            }
+            }
+            if(match) result++;
+        }
+        return result;
+    }
+}
