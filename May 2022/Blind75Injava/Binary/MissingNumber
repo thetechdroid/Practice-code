@@ -1,0 +1,26 @@
+class MissingNumber {
+    public int missingNumber(int[] nums) {
+       
+        // approach 1
+       int length = nums.length; 
+       int sum = length * (length + 1)/2;
+        
+       int localSum = 0;
+        
+       for(int num : nums) localSum += num;
+        return sum-localSum;
+        
+        // approach 1
+        int length = nums.length; // range would be from 1 to length
+        int result = 0;
+      
+        int missingNumber = length;
+        
+        for(int i=0; i < length;i++){
+            missingNumber = missingNumber ^ i ^ nums[i];
+        }
+        
+        return missingNumber;
+        
+    }
+}
