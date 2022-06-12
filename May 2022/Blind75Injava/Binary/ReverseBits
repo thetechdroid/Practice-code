@@ -1,0 +1,29 @@
+
+// third approach with explanation : https://leetcode.com/problems/reverse-bits/discuss/54738/Sharing-my-2ms-Java-Solution-with-Explanation
+public class ReverseBits {
+    public int reverseBits(int n) {
+        
+        // first approach
+        int ans = 0;
+        for (int i = 0; i < 32; i++) {
+            ans <<= 1;
+            ans = ans | (n & 1);
+            n >>= 1;
+        }
+        return ans;
+        
+        // second approach
+        int num=0;
+        int count = 31;
+        
+        while(count>=0){
+            num = num + (n & 1) * (1 << count);
+            n = n >> 1;
+            count--;
+        }
+        
+        return num;
+        
+        
+    }
+}
