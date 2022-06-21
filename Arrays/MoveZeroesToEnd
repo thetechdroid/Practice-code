@@ -1,0 +1,19 @@
+class MoveZeroes {
+    public void moveZeroes(int[] nums) {
+        if(nums == null || nums.length == 0 || nums.length == 1) return;
+        int i=0;
+        for(int j=0;j < nums.length;j++){
+            if(nums[j] != 0){
+                swap(nums, i, j);
+                i++;
+            }
+        }
+    }
+    
+    
+    public void swap(int[] arr, int a, int b){ // a, b are indexes to swap
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+}
