@@ -1,0 +1,30 @@
+class Solution {
+    public boolean buddyStrings(String s, String goal) {
+        
+        if(s.isEmpty() || goal.isEmpty() || (s.length() != goal.length())) return false;
+        
+        
+        int a = -1, b = -1, diff = 0;
+        int[] count = new int[26]; // O(1)
+        boolean sameString = false;
+        
+       
+        for(int i=0; i< s.length(); i++){
+         if(++count[s.charAt(i) - 'a'] >= 2){
+             sameString = true;
+          }
+         
+        if(s.charAt(i) != goal.charAt(i)){
+            diff++;
+            if(a == -1) a = i;
+            else if(b == -1) b = i;
+        }
+        }
+        
+        
+        boolean result = (diff == 0 && sameString) || (diff == 2 && (s.charAt(a) == goal.charAt(b) && s.charAt(b) == goal.charAt(a)));
+        
+        return result;
+        
+    }
+}
