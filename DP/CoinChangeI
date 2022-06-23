@@ -1,0 +1,36 @@
+class Solution {
+    
+    public Integer[] memo; 
+
+    public int coinChange(int[] coins, int amount) {
+        
+    if(coins.length == 0) return -1;
+        memo = new Integer[amount];
+        int num = coinChangeRec(coins, amount);
+        return num;
+    }
+    
+    
+    
+    private int coinChangeRec(int[] coins, int amount){
+        
+        if(amount < 0) return -1;
+        if(amount == 0) return 0;
+        
+        if(memo[amount-1] != null) return memo[amount-1];
+        
+        int min = Integer.MAX_VALUE;
+        for(int coin : coins){
+            int count = coinChangeRec(coins, amount-coin);
+            if(count == -1) continue;
+            min = Math.min(min, count+1);
+            
+        }
+        
+        min = (min == Integer.MAX_VALUE)? -1 : min;
+        
+        memo[amount-1] = min;
+        return min;
+    } 
+    
+}
