@@ -1,0 +1,36 @@
+/**
+ * Your FileSystem object will be instantiated and called as such:
+ * FileSystem obj = new FileSystem();
+ * boolean param_1 = obj.createPath(path,value);
+ * int param_2 = obj.get(path);
+ */
+
+// example path : path/abc/file.jpeg
+
+class FileSystem {
+
+    Map<String, Integer> file = new HashMap<>();
+    
+    public FileSystem() {
+        file.put("", -1);
+    }
+    
+    public boolean createPath(String path, int value) {
+        
+        int index = path.lastIndexOf("/");
+        String parent = path.substring(0, index);
+        
+        if(!file.containsKey(parent) || file.containsKey(path)) return false;
+        
+        file.put(path, value);
+        return true;
+    }
+    
+    public int get(String path) {
+        if(file.containsKey(path)){
+            return file.get(path);
+        }
+        return -1;
+    }
+}
+
