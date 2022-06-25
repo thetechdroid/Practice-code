@@ -1,3 +1,5 @@
+/** More optimized trie solution : https://leetcode.com/problems/design-file-system/discuss/366094/JavaPython-TrieTree-solution */
+
 /**
  * Your FileSystem object will be instantiated and called as such:
  * FileSystem obj = new FileSystem();
