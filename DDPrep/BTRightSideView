@@ -1,0 +1,26 @@
+class BTRightSideView {
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        rightView(root, result, 0); // 0 is the level of the root
+        return result;
+    }
+    
+    
+    public void rightView(TreeNode root, List<Integer> result, int level){
+        if(root == null) return;
+     
+        /**
+        Before adding root, result is 0 in size
+        After adding the rightmost element on next level, the size would be 1 if the node exists
+        similarly we will keep on adding ONE node per level, so we can simply check if the total 
+        result size is equal to level or not.
+        */
+        
+        if(level == result.size()){ // the tricky part
+            result.add(root.val);
+        }
+        
+        rightView(root.right, result, level+1); // we want right side first, if that doesn't exist then left
+        rightView(root.left, result, level+1);
+    }
+}
