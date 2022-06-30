@@ -1,0 +1,22 @@
+class MaxUnitsOnATruck {
+    public int maximumUnits(int[][] boxTypes, int truckSize) {
+        
+        if(boxTypes == null || boxTypes.length == 0 || boxTypes[0].length == 0){
+            return 0;
+        }
+
+        int result = 0;
+        Arrays.sort(boxTypes, (a,b) -> b[1] - a[1]); // sorted in decreasing order by second item
+
+        for(int[] box : boxTypes){
+            int count = Math.min(truckSize, box[0]);
+            result = result + count * box[1];
+            truckSize = truckSize - count;
+            
+            if(truckSize == 0){
+                break;
+            }
+        }
+        return result;
+    }
+}
