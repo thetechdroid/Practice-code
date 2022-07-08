@@ -1,0 +1,44 @@
+class UniqueEmailAddress { // TC : O(nk), SC : O(n)
+
+    public int numUniqueEmails(String[] emails) {
+        
+        // to keep list of unique emails, we need a set
+        // its size can be returned later
+        
+        Set<String> set = new HashSet<>(); // O(n)
+        
+        for(String email : emails){ // O(n)
+            
+            // . doesnt have much significance
+            
+            
+            StringBuilder builder = new StringBuilder();
+            
+            int indexOfSeparator = email.indexOf("@");
+            
+            String name = email.substring(0,indexOfSeparator); // O(k)
+            String domain = email.substring(indexOfSeparator); // O(k)
+            String newName = "";
+            
+            if(name.contains(".")){
+                newName = name.replace(".", "");
+            }else{
+                newName = name;
+            }
+            
+            String nameBeforePlusSign =  newName;
+            
+            if(newName.contains("+")){
+                int index =  newName.indexOf("+");
+                nameBeforePlusSign = newName.substring(0, index);
+            }
+
+            builder.append(nameBeforePlusSign).append(domain);
+            set.add(builder.toString());
+        }
+        
+        System.out.print(set);
+        
+        return set.size();
+    }
+}
